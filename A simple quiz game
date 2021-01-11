@@ -1,0 +1,41 @@
+print("Hello, Welcome to Trivia!")
+score=0
+total_q=4
+
+ans=input("Are you ready to play (yes/no)\n:")
+
+if ans.lower()=="yes":
+    ans = input("1. What is my name?")
+    if ans.lower()=="rhythm":
+        score += 1
+        print("Correct!")
+    else:
+        print("Incorrect!")
+        
+    ans = input("2. What is my age?")
+    if ans=="18":
+        score += 1
+        print("Correct!")
+    else:
+        print("Incorrect!")
+        
+    ans = input("3. What is my favourite place?")
+    if ans.lower()=="himachal pradesh":
+        score += 1
+        print("Correct!")
+    else:
+        print("Incorrect!")
+        
+    ans = input("4. What is my hobby?")
+    if ans.lower()=="nothing":
+        score += 1
+        print("Correct!")
+    else:
+        print("Incorrect!")
+        
+        
+    print("Thank you for playing. You got", score ,"questions correct.")
+    mark= (score/total_q)*100
+
+    print("Marks: ",str(mark)+"%")
+print("Goodbye!")
