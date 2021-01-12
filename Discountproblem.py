@@ -17,3 +17,4 @@ if(cost>1000):
     print("Congrats! You got a discount of %d. You just have to pay %u." %(discount, final))
 else:
     print("You have to pay: %f" %cost)
+print("Goodbye!")
